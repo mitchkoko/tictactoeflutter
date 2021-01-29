@@ -138,56 +138,56 @@ class _HomePageState extends State<HomePage> {
     if (displayExOh[0] == displayExOh[1] &&
         displayExOh[0] == displayExOh[2] &&
         displayExOh[0] != '') {
-      _showWinDialog(displayExOh[0]);
+      return _showWinDialog(displayExOh[0]);
     }
 
     // checks 2nd row
     if (displayExOh[3] == displayExOh[4] &&
         displayExOh[3] == displayExOh[5] &&
         displayExOh[3] != '') {
-      _showWinDialog(displayExOh[3]);
+      return _showWinDialog(displayExOh[3]);
     }
 
     // checks 3rd row
     if (displayExOh[6] == displayExOh[7] &&
         displayExOh[6] == displayExOh[8] &&
         displayExOh[6] != '') {
-      _showWinDialog(displayExOh[6]);
+      return _showWinDialog(displayExOh[6]);
     }
 
     // checks 1st column
     if (displayExOh[0] == displayExOh[3] &&
         displayExOh[0] == displayExOh[6] &&
         displayExOh[0] != '') {
-      _showWinDialog(displayExOh[0]);
+      return _showWinDialog(displayExOh[0]);
     }
 
     // checks 2nd column
     if (displayExOh[1] == displayExOh[4] &&
         displayExOh[1] == displayExOh[7] &&
         displayExOh[1] != '') {
-      _showWinDialog(displayExOh[1]);
+      return _showWinDialog(displayExOh[1]);
     }
 
     // checks 3rd column
     if (displayExOh[2] == displayExOh[5] &&
         displayExOh[2] == displayExOh[8] &&
         displayExOh[2] != '') {
-      _showWinDialog(displayExOh[2]);
+      return _showWinDialog(displayExOh[2]);
     }
 
     // checks diagonal
     if (displayExOh[6] == displayExOh[4] &&
         displayExOh[6] == displayExOh[2] &&
         displayExOh[6] != '') {
-      _showWinDialog(displayExOh[6]);
+      return _showWinDialog(displayExOh[6]);
     }
 
     // checks diagonal
     if (displayExOh[0] == displayExOh[4] &&
         displayExOh[0] == displayExOh[8] &&
         displayExOh[0] != '') {
-      _showWinDialog(displayExOh[0]);
+      return _showWinDialog(displayExOh[0]);
     }
 
     else if(filledBoxes == 9){
