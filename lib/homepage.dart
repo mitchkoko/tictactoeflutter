@@ -122,13 +122,19 @@ class _HomePageState extends State<HomePage> {
       if (ohTurn && displayExOh[index] == '') {
         displayExOh[index] = 'o';
         filledBoxes += 1;
+      ohTurn = !ohTurn;
+      _checkWinner();
+        
+        
       } else if (!ohTurn && displayExOh[index] == ''){
         displayExOh[index] = 'x';
         filledBoxes += 1;
-      }
-
       ohTurn = !ohTurn;
       _checkWinner();
+        
+        
+      }
+
     });
   }
 
